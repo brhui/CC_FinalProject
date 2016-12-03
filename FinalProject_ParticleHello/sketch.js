@@ -8,7 +8,7 @@ var fontSize = 100;
 //Variable for switching words
 var newGreeting = 0;
 
-var system;
+var system; // From example particle class
 
 function preload() {
   font = loadFont('content/OpenSans-Bold.ttf');
@@ -20,15 +20,15 @@ function setup() {
 
   textFont(font, fontSize);
 
-  system = new ParticleSystem(createVector(width / 2, 50));
+  system = new ParticleSystem(createVector(width / 2, 50)); // From example particle class
 
 }
 
 function draw() {
   background(255);
 
-  system.addParticle();
-  system.run();
+  system.addParticle(); // From example particle class
+  system.run(); // From example particle class
 
   fill(134, 153, 234);
   textAlign(CENTER, CENTER);
